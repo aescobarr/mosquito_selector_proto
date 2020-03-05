@@ -6,38 +6,30 @@
     <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <div>
-            <button id="add_row">+</button>
-          </div>
-        </div>
-      </div>
+    <div class="container">      
       <div id="rowset">      
-      <!--<div class="row">
-        <div class="col-md-2">
-          <select id="main">
-            <option value="-1">...Selecciona especie...</option> 
-            <option value="1">Albopictus</option> 
-            <option value="2">Aegypti</option> 
-            <option value="3">Japonicus</option> 
-            <option value="4">Japonicus or Koreicus</option> 
-            <option value="5">Koreicus</option> 
-            <option value="6">Other species</option> 
-            <option value="7">Non identifiable</option> 
-          </select>
+        <div id="row_1" class="row">
+          <div class="col-md-2">
+            <select id="main_1" onchange="javascript:change_main(1);">
+              <option value="-1">...Selecciona especie...</option>
+              <option value="1">Albopictus</option>
+              <option value="2">Aegypti</option>
+              <option value="3">Japonicus</option>
+              <option value="4">Japonicus or Koreicus</option>
+              <option value="5">Koreicus</option>
+              <option value="6">Other species</option>
+              <option value="7">Non identifiable</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <select id="second_1" onchange="javascript:change_second(1);">
+              <option value="-1">...Selecciona certesa...</option>
+              <option value="1">Definitely</option>
+              <option value="2">Probably</option>
+            </select>
+          </div>          
         </div>
-        <div class="col-md-2">
-          <select id="second">
-            <option value="-1">...Selecciona certesa...</option> 
-            <option value="1">Yes</option> 
-            <option value="2">Maybe</option> 
-          </select>
-        </div>
-      </div>-->
-      </div>
-    </div>
+      </div>    
     <div id="result"></div>
   </body>
 </html>
